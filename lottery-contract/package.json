@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "Blockchain",
@@ -18,6 +18,8 @@
   "author": "Tejas Agrawal",
   "license": "ISC",
   "dependencies": {
+    "@truffle/hdwallet-provider": "^1.2.6",
+    "ganache-cli": "^6.12.2",
     "mocha": "^8.3.2",
     "solc": "^0.8.3",
     "web3": "^1.3.5"
