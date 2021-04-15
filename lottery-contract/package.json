@@ -16,5 +16,10 @@
     "CryptoCurrency"
   ],
   "author": "Tejas Agrawal",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^8.3.2",
+    "solc": "^0.8.3",
+    "web3": "^1.3.5"
+  }
 }
