@@ -8,6 +8,8 @@ const web3 = new Web3(ganache.provider());
 let lottery;
 let accounts;
 
+console.log(compiled['abi']);
+
 beforeEach(async () => {
     accounts = await web3.eth.getAccounts();
 

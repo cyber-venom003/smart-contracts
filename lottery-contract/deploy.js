@@ -16,12 +16,12 @@ const deploy = async () => {
     console.log('Attempting to deploy from account ', accounts[0]);
 
     const deploymentResult = await new web3.eth.Contract(compiled['abi'])
-            .deploy({ data: compiled.evm.bytecode.object, arguments: ['Inbox Contract deployed to Rinkeby Network!']})
-            .send({gas: '1000000', from: accounts[0]});
+        .deploy({ data: compiled.evm.bytecode.object })
+        .send({from: accounts[0] , gas: '1000000'});
 
     console.log('Contract deployed to ', deploymentResult.options.address);
 }
 
 deploy();   
 
-//Above contract is already deployed at 0x66887a93eb0e3fcdff0272F21e26552b01AF50a4
+//Above contract is already deployed at 0xa34F4A4109BB2A7C94577422f5585b842169C60c
